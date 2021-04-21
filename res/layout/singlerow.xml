@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="304dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/pricecontent"
+            android:layout_width="205dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/coursetext"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="111dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="Price Here"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="77dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/coursetext"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="112dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/emailtext2"
+            android:layout_width="77dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/coursetext"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="Content"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cfimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/cfemailtext2"
+            android:layout_width="215dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="79dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="This is Demo Name"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cfemailtext"
+            android:layout_width="73dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="Email"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/coursetext"
+            android:layout_width="215dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/cfemailtext2"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="This is Course Name"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="205dp"
+            android:layout_height="79dp"
+            android:layout_below="@id/coursetext"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="This is Email Name"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/coursetext2"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_below="@id/cfemailtext2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/cfimg"
+            android:text="Topic:"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

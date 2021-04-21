@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cfhomefragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="487dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/crowdfunding_header" />
+
+    <TextView
+android:id="@+id/cf_search"
+android:layout_width="250dp"
+android:layout_height="40dp"
+android:background="@drawable/rounded_corner"
+android:gravity="center"
+android:hint="Find creativity"
+android:textSize="16sp"
+app:layout_constraintBottom_toBottomOf="@+id/imageView"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cf_searchicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/cf_search"
+        app:layout_constraintEnd_toEndOf="@+id/cf_search"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="@+id/cf_search"
+        app:layout_constraintTop_toTopOf="@+id/cf_search"
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <Button
+        android:id="@+id/cf_back"
+        android:layout_width="35dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#00511C1C"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+    <ImageButton
+        android:id="@+id/cf_fav"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cf_back"
+        app:layout_constraintVertical_bias="0.855"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="404dp"
+        android:layout_height="431dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
